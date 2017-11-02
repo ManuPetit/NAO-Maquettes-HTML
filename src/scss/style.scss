@@ -1,0 +1,254 @@
+/* COULEURS DU SITE */
+$nao-green: #1daa69;
+$nao-dark-green: #274144;
+$nao-brown: #775308;
+$nao-cream: #e0cfc6;
+$nao-text-dark: #28282f;
+$nao-text-light: #95989a;
+$nao-dark-overlay: rgba(0,0,0,.6);
+$nao-blue : #4267b2;
+
+/* POLICE DU SITE */
+@font-face {
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+}
+/* GENERALITIES SECTION */
+body {
+  font-family: 'Asap',Arial,sans-serif;
+  background-color: #ffffff;
+}
+.text-title-green {
+  color: $nao-green;
+  text-shadow: 4px 4px 2px $nao-dark-green;
+  font-weight: bold;
+}
+.text-title-cream {
+  color: $nao-cream;
+  text-shadow: 3px 3px 2px #000000;
+}
+.text-dark-green {
+  color: $nao-dark-green;
+}
+.bg-cream {
+  background-color: $nao-cream;
+}
+.logo-link {
+  width: 70px;
+}
+
+.bird-up {
+  width: 75%;
+}
+/* NAVIGATION SECTION */
+nav {
+  li {
+    padding: 0 5px;
+  }
+  .img-nav{
+    width: 70px;
+  }
+}
+.btn {
+  border-radius: 30px !important;
+}
+/* LANDING PAGE -> IMAGE SECTION */
+#image-section {
+  background: url('../img/eagle.jpg') no-repeat;
+  background-size: cover;
+  height: 360px;
+
+  #video-background {
+    display: none;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+/* LANDING PAGE -> DECOUVRIR SECTION
+-> QUI SECTION       */
+#decouvrir-section, #qui-section{
+  background-color: $nao-dark-green;
+  color: #ffffff;
+}
+
+/* FOOTER SECTION */
+#footer-section {
+  .footer-exp {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+  }
+  .footer-exp {
+    color: $nao-dark-green;
+  }
+  .land .footer-exp {
+    color: #eeeeee;
+  }
+  .nav-link {
+    color: $nao-dark-green;
+  }
+  .land .nav-link {
+    color: #eeeeee;
+  }
+  .nav-link:hover {
+    color: $nao-blue;
+  }
+}
+
+/* ACCUEIL PAGE --> */
+#accueil-intro {
+  img.birdie {
+    width: 47px;
+    height: auto;
+  }
+  .read-more {
+    color: $nao-dark-green;
+  }
+  .read-more:hover {
+    text-decoration: none;
+    color: $nao-green;
+  }
+}
+#participer-accueil-section {
+  .parti-obs {
+    height: 198px;
+    background: url('../img/accueil-observer.png') no-repeat;
+    background-position: center;
+    h4 {
+      margin-top: 100px;
+    }
+  }
+  .parti-pho {
+    height: 198px;
+    background: url('../img/accueil-photographier.png') no-repeat;
+    background-position: center;
+    h4 {
+      margin-top: 100px;
+    }
+  }
+  .parti-par {
+    height: 198px;
+    background: url('../img/accueil-partager.png') no-repeat;
+    background-position: center;
+    h4 {
+      margin-top: 115px;
+    }
+  }
+  .parti-val {
+    height: 198px;
+    background: url('../img/accueil-valider.png') no-repeat;
+    background-position: center;
+    h4 {
+      margin-top: 100px;
+    }
+  }
+}
+#observation-accueil-section {
+  .container {
+    background-color: $nao-dark-green;
+  }
+  .card-text {
+    font-size: .8em;
+  }
+}
+#vouloir-accueil-section {
+  a {
+    color: #ffffff;
+  }
+  a:hover {
+    color: $nao-blue;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 1.7em;
+    margin-top: 8%;
+  }
+}
+
+/* BREAKPOINT SECTION */
+@media (min-width:768px) {
+  nav {
+    .container {
+      border-bottom: 3px $nao-dark-green solid;
+    }
+  }
+  #image-section {
+    height: auto;
+    background: url();
+    background-color: $nao-dark-green;
+    #video-background{
+      display: initial;
+      width: 100%;
+    }
+    #video-inner {
+      width: 100%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: 20vh;
+    }
+    h1 {
+      font-size: 4em;
+    }
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+  #observation-accueil-section {
+    .container {
+      background: url('../img/accueil-vertice.png');
+      background-repeat: repeat-x;
+    }
+  }
+  .bird-up {
+    width: 100%;
+  }
+  #vouloir-accueil-section {
+    h2 {
+      font-size: 2.2em;
+      margin-top: 10%;
+    }
+  }
+}
