@@ -14,8 +14,18 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light mt-3 mb-0 pb-0">
     <div class="container">
-      <a class="nav-link d-md-none p-0" href="#"><img src="img/user.png" class="img-nav" alt=""></a>
-      <a class="nav-link d-md-none p-0" href="#"><img src="img/mini-logo.png" class="img-nav" alt=""></a>
+      <a class="nav-link d-md-none p-0" href="index.html"><img src="img/mini-logo.png" class="img-nav" alt=""></a>
+      <div class="nav-item dropdown  order-md-2">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          <img src="img/user.png" class="img-nav" alt="">
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Autre action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Déconnexion</a>
+        </div>
+      </div>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,16 +44,13 @@
             <a class="nav-link" href="index.html"><img src="img/mini-logo.png" class="logo-link" alt=""></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="bloc.html">Blog</a>
-          </li>
-          <li class="nav-item text-center">
             <a class="nav-link" href="recherche.html">Rechercher</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="obervations.html">Observation</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
-          <li class="nav-item d-none d-md-inline text-center">
-            <a class="nav-link" href="connexion.html"><img src="img/user.png" class="img-nav" alt=""></a>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="observation.html">Observation</a>
           </li>
         </ul>
       </div>
@@ -59,26 +66,14 @@
           <img src="img/accueil-top.png" alt="" class="img-fluid">
         </div>
       </div>
-      <div class="row bg-cream justify-content-center text-dark-green">
-        <div class="col-12 text-center pb-5">
-          <h2 class=""><img src="img/mini-oiseau.png" class="birdie" alt=""> Qui sommes nous ?</h2>
-        </div>
-        <div class="col-12 px-5">
-          <p>L’association a été créée en 2003 par Michel Dujardin, le musicien percussionniste Laurent Julia, avec l’aide du maire de Villard de Lans Jean Pierre Bouvier.</p>
-          <p>A ses débuts, l’association s’occupait principalement de la protection de la faune sauvage et de ses biotopes dans les départements de la Drôme et de l’Isère.</p>
-          <p>Entre 2005 et 2010, l’association va, par l’intermédiaire de Michel Dujardin, promouvoir et sensibiliser les enfants aux problèmes écologiques. Elle va permettre dans les écoles, la  vulgarisation des connaissances naturalistes par le biais de conférences, animations et sorties scolaires.</p>
-          <p class="row justify-content-end px-5"><a href="#" class="read-more"><em>Lire plus <i class="fa fa-angle-double-right"></i></em></a></p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- PARTICIPER SECTION -->
-  <section id="participer-accueil-section">
-    <div class="container">
+  <section id="participer-accueil-section" class="">
+    <div class="container bg-light">
       <div class="row ">
         <div class="col text-center px-0">
-          <img src="img/accueil-comment.png" alt="" class="img-fluid">
           <h2 class="text-dark-green">Comment participer ?</h2>
         </div>
       </div>
@@ -97,13 +92,78 @@
         </div>
       </div>
       <div class="row">
-        <div class="col px-0 pb-3">
-          <img src="img/accueil-comment-bas.png" alt="" class="img-fluid">
+        <div class="col px-0 pb-0">
+          <img src="img/accueil-comment.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SECTION BLOG -->
+  <section id="blog-accueil-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center pb-3">
+          <h2>Les derniers articles</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card mb-3">
+            <img src="img/blog-01.jpg" alt="" class="card-img-top">
+            <div class="card-img-overlay text-center">
+              <h3 class="card-title text-white bg-dark-transparent py-3">
+                <a href="blog.html">Le bon endroit</a>
+              </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Choisir le bon moment pour sortir, chercher l'oiseau dans le paysage, être attentif au moindre cri sont les principes de base de l'ornithologie de terrain. Cela s'apprend, dans les livres mais surtout sur le terrain, seul ou en compagnie d'ornithologues plus expérimentés.</p>
+              <div class="col-12 text-right">
+                <a href="#" class="align-self-right">Lire plus <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card mb-3">
+            <img src="img/blog-02.jpg" alt="" class="card-img-top">
+            <div class="card-img-overlay text-center">
+              <h3 class="card-title text-white bg-dark-transparent py-3">
+                <a href="blog.html">Choisir ses jumelles</a>
+              </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Étant donné la multitude des marques et des modèles disponibles sur le marché, il devient très difficile, pour un débutant (et même pour un utilisateur confirmé) de choisir une paire de jumelles bien adaptée à ses besoins et à son budget; or il s'agit certainement de l'objet le plus important pour un observateur, qui l'accompagnera partout sur le terrain.</p>
+              <div class="col-12 text-right">
+                <a href="#" class="align-self-right">Lire plus <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card mb-3">
+            <img src="img/blog-03.jpg" alt="" class="card-img-top">
+            <div class="card-img-overlay text-center">
+              <h3 class="card-title text-white bg-dark-transparent py-3">
+                <a href="blog.html">Un livre pour débuter</a>
+              </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Conçu spécialement pour les débutants et observateurs occasionnels, ce guide est le premier à aborder l’identification des oiseaux communs par leur caractère le plus visible : leurs couleurs. Aucune connaissance préalable en ornithologie n’est nécessaire pour l’utiliser.</p>
+              <div class="col-12 text-right">
+                <a href="#" class="align-self-right">Lire plus <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col px-0 pb-0">
+          <img src="img/accueil-comment-bas.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- SECTION OBSERVATIONS -->
   <section id="observation-accueil-section">
     <div class="container pt-5 pb-3">
@@ -200,15 +260,19 @@
     </div>
   </section>
 
-  <!-- JE VEUX PARTICIPER SECTION -->
   <section id="vouloir-accueil-section">
+    <div class="container">
+      <div class="row">
+        <img src="img/accueil-bottom-high.png" alt="" class="card-img">
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col px-0">
           <div class="card border-0">
-            <img src="img/accueil-bottom.png" alt="" class="card-img">
+            <img src="img/accueil-bottom-low.png" alt="" class="card-img">
             <div class="card-img-overlay text-center">
-              <a href="#" class="">
+              <a href="#">
                 <h2>Je veux participer !</h2>
               </a>
             </div>
@@ -222,7 +286,6 @@
     <div class="container text-center py-3">
       <div class="row align-items-center justify-content-center">
         <a class="nav-link" href="#">Mentions légales</a>
-        <a class="nav-link" href="#">Partenaires</a>
         <a class="nav-link" href="#">Contact</a>
         <a class="nav-link d-none d-md-inline" href="index.html"><img src="img/mini-logo.png" class="logo-link" alt=""></a>
         <p class="footer-exp">Suivez-nous</p>
