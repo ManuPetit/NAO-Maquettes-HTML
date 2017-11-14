@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mes favoris - NAO</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light mt-3 mb-0 pb-0">
+    <div class="container">
+      <a class="nav-link d-md-none p-0" href="index.html"><img src="img/mini-logo.png" class="img-nav" alt=""></a>
+      <div class="nav-item dropdown order-md-2">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          <img src="img/user.png" class="img-nav" alt="">
+        </a>
+        <div class="dropdown-menu">
+          <a href="mes-observations.html" class="dropdown-item">Mes observations</a>
+          <a href="mes-favoris.html" class="dropdown-item active">Mes favoris</a>
+          <a href="mon-profil.html" class="dropdown-item">Mon profil</a>
+          <a href="mes-badges.html" class="dropdown-item">Mes badges</a>
+          <a href="gestion-observation.html" class="dropdown-item">Gérer observations</a>
+          <a href="article.html" class="dropdown-item">Ecrire article</a>
+          <a href="gestion-article.html" class="dropdown-item">Gérer articles</a>
+          <a href="gestion-membre.html" class="dropdown-item">Gérer membres</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Déconnexion</a>
+        </div>
+      </div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center mx-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link" href="accueil.html">Accueil</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="apropos.html">A propos</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="participer.html">Participer</a>
+          </li>
+          <li class="nav-item d-none d-md-inline text-center">
+            <a class="nav-link" href="index.html"><img src="img/mini-logo.png" class="logo-link" alt=""></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="recherche.html">Rechercher</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="liste-observation.html">Observation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OBSERVATION SECTION -->
+  <section id="my-observations">
+    <div class="container py-5 bg-green px-md-5">
+      <div class="row">
+        <div class="col-12 text-center pb-3 text-white">
+          <h1>Mes observations sauvegardées</h1>
+        </div>
+        <div class="col-4 d-none d-md-block">
+          <ul class="nav flex-column side-menu">
+            <li class="nav-item">
+              <a href="mes-observations.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Mes observations</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mes-favoris.html" class="nav-link d-flex justify-content-between active">
+                <p class="p-1 m-0">Mes favoris</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mon-profil.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Modifier mon profil</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mes-badges.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Mes badges</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gestion-observation.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Gestion des observations</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="article.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Ecrire un article du blog</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gestion-article.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Gestion des articles du blog</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gestion-membre.html" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Gestion des utilisateurs</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-flex justify-content-between">
+                <p class="p-1 m-0">Déconnexion</p>
+                <p class="p-1 m-0"><i class="fa fa-angle-right"></i></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-8 text-white pb-md-4">
+          <div class="row row-separate py-3">
+            <div class="col-12 col-md-5">Moineau domestique</div>
+            <div class="col-4 col-md-2">10 août 2017</div>
+            <div class="col-5 col-md-3">Bordeaux</div>
+            <div class="col-1">
+              <a href="#" title="Supprimer observation"><i class="fa fa-trash"></i></a>
+            </div>
+            <div class="col-1">
+              <a href="#" title="Voir observation"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+          <div class="row row-separate py-3">
+            <div class="col-12 col-md-5">Piegon </div>
+            <div class="col-4 col-md-2">5 Juillet 2017</div>
+            <div class="col-5 col-md-3">Paris</div>
+            <div class="col-1">
+              <a href="#" title="Supprimer observation"><i class="fa fa-trash"></i></a>
+            </div>
+            <div class="col-1">
+              <a href="#" title="Voir observation"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+          <div class="row row-separate py-3">
+            <div class="col-12 col-md-5">Milan Royal</div>
+            <div class="col-4 col-md-2">15 mai 2017</div>
+            <div class="col-5 col-md-3">Piana</div>
+            <div class="col-1">
+              <a href="#" title="Supprimer observation"><i class="fa fa-trash"></i></a>
+            </div>
+            <div class="col-1">
+              <a href="#" title="Voir observation"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer-section">
+    <div class="container text-center py-3">
+      <div class="row align-items-center justify-content-center">
+        <a class="nav-link" href="#">Mentions légales</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link d-none d-md-inline" href="index.html"><img src="img/mini-logo.png" class="logo-link" alt=""></a>
+        <p class="footer-exp">Suivez-nous</p>
+        <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+        <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+        <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+        <a class="nav-link" href="#"><i class="fa fa-google-plus"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

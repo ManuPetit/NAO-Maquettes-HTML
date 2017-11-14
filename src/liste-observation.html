@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Milan Royal à Piana - NAO</title>
+  <title>liste observations - NAO</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -56,67 +56,113 @@
     </div>
   </nav>
 
-  <!-- SECTION ARTICLE BLOG -->
-  <article id="blog" class="mb-5">
+  <!-- LISTE OBSERVATION SECTION -->
+  <section id="liste-observation-section" class="mb-5">
     <div class="container p-5">
       <div class="row">
         <div class="col-12 text-right">
-          <a class="btn btn-success" href="participer.html" title="Ajouter une observation">
+          <a class="btn btn-success text-white" href="participer.html" title="Ajouter une observation">
             <i class="fa fa-plus"></i> Observation
           </a>
         </div>
       </div>
     </div>
-    <div class="container bg-cream">
-      <div class="row py-5">
-        <div class="col-12 text-center">
-          <h1>Milan royal à Piana</h1>
+    <div class="container">
+      <form action="liste_observation_form">
+        <div class="row jusitfy-content-center">
+          <div class="form-group col-12 col-md-3">
+            <label for="filter">Filtrer par</label>
+            <select id="filter" class="form-control">
+              <option value="espece">Espèce</option>
+              <option value="lieu">Lieu</option>
+              <option value="Date">Date</option>
+            </select>
+          </div>
+          <div class="form-group col-12 col-md-3">
+            <label for="trier">Trier par</label>
+            <select id="trier" class="form-control">
+              <option value="down">En descendant</option>
+                <option value="up">En montant</option>
+            </select>
+          </div>
+          <div class="form-group col-12 col-md-4 ml-auto">
+            <label for="search">Rechercher</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Chercher..." id="search">
+              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container bg-cream py-3">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h2>Milan royal à Piana</h2>
+        </div>
+        <div class="col-12 px-md-5 pb-3">
+          <img src="img/pobs-02.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+          Auteur : Jean
+        </div>
+        <div class="col-12 col-md-4">
+          Espèce : Milan Royal
+        </div>
+        <div class="col-12 col-md-3">
+          Date : 10/07/2017
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 align-self-center">
+          Lieu : Piana
+        </div>
+        <div class="col-12 col-md-4 align-self-center">
+          <a href="observation.html">En lire plus <i class="fa fa-angle-double-right"></i></a>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="#" class="btn btn-success text-white">Ajouter à mes favoris</a>
         </div>
       </div>
       <div class="row">
-        <div class="col px-4 pb-4">
-          <div id="carouselObser" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselObser" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselObser" data-slide-to="1"></li>
-              <li data-target="#carouselObser" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/pobs-01.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="img/pobs-02.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="img/pobs-03.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselObser" role="button" data-slide="prev">
-              <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
-              <span class="sr-only">Précédent</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselObser" role="button" data-slide="next">
-              <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
-              <span class="sr-only">Suivant</span>
-            </a>
-          </div>
+        <div class="col-12 pt-5">
+          <p class="separation-line"></p>
         </div>
       </div>
-      <div class="row pt-4 px-4">
-        <div class="col-12 col-md-4">Auteur : Jean</div>
-        <div class="col-12 col-md-4">Espèce : Milan</div>
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h2>Milan royal à Piana</h2>
+        </div>
+        <div class="col-12 px-md-5 pb-3">
+          <img src="img/pobs-01.jpg" alt="" class="img-fluid">
+        </div>
       </div>
-      <div class="row px-4">
-        <div class="col-12 col-md-4">Date : 4 juin 2017</div>
-        <div class="col-12 col-md-4">Lieu : Piana</div>
-        <div class="col-12 col-md-4">Point: 42.260662, 8.676282</div>
-        <div class="col-12 py-5">
-          <p>Superbe oiseau oiseau observé cette année, en juin près de Porto, en Corse.</p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+          Auteur : Jean
+        </div>
+        <div class="col-12 col-md-4">
+          Espèce : Milan Royal
+        </div>
+        <div class="col-12 col-md-3">
+          Date : 10/07/2017
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 align-self-center">
+          Lieu : Piana
+        </div>
+        <div class="col-12 col-md-4 align-self-center">
+          <a href="observation.html">En lire plus <i class="fa fa-angle-double-right"></i></a>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="#" class="btn btn-success text-white">Ajouter à mes favoris</a>
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
   <section class="back-up d-none d-md-block">
     <div class="container">

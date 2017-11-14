@@ -69,17 +69,35 @@ body {
 .bg-green {
   background-color: #1daa69; }
 
+.bg-brown {
+  background-color: #775308; }
+
 .bg-dark-transparent {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .logo-link {
   width: 70px; }
 
+.separation-line {
+  border-bottom: 2px #274144 solid; }
+
 .bird-up {
   width: 75%; }
 
 .border-white {
   border: 4px solid #ffffff; }
+
+.side-menu a, #my-observations a {
+  color: #ffffff; }
+
+.side-menu a.active, .side-menu a:hover, #my-observations a.active, #my-observations a:hover {
+  color: #274144; }
+
+.side-menu li, #my-observations li {
+  border-bottom: 1px #ffffff solid; }
+
+.dropdown-menu a.active {
+  background-color: #274144; }
 
 /* NAVIGATION SECTION */
 nav li {
@@ -88,7 +106,7 @@ nav li {
 nav .img-nav {
   width: 70px; }
 
-.btn {
+.btn-landing {
   border-radius: 30px !important; }
 
 /* LANDING PAGE -> IMAGE SECTION */
@@ -244,6 +262,38 @@ nav .img-nav {
   #apropos-proposition-section .box-title a:hover {
     color: #4267b2;
     text-decoration: none; }
+
+/* PARTICIPER SECTION */
+#participer-section .fa {
+  font-size: 2.5em; }
+
+#participer-section a.img-link {
+  color: #274144; }
+
+#participer-section a:hover.img-link {
+  color: #4267b2;
+  text-decoration: none; }
+
+/* RECHERCHER SECTION */
+#rechercher-result-section td a {
+  color: #ffffff; }
+
+#rechercher-result-section td a:hover {
+  color: #4267b2; }
+
+/* LISTE OBSERVATION */
+#liste-observation-section a {
+  color: #000000; }
+
+#liste-observation-section a:hover {
+  color: #4267b2;
+  text-decoration: none; }
+
+/* ADMIN SECTIONS */
+#profil_form .row:not(:last-child),
+#my-observations .row-separate:not(:last-child) {
+  padding-bottom: 12px;
+  border-bottom: 1px #ffffff solid; }
 
 /* BREAKPOINT SECTION */
 @media (min-width: 768px) {

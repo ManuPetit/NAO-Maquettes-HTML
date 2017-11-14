@@ -78,18 +78,37 @@ body {
 .bg-green {
   background-color: $nao-green;
 }
+.bg-brown {
+  background-color: $nao-brown;
+}
 .bg-dark-transparent {
   background-color: $nao-dark-overlay;
 }
 .logo-link {
   width: 70px;
 }
-
+.separation-line {
+  border-bottom: 2px $nao-dark-green solid;
+}
 .bird-up {
   width: 75%;
 }
 .border-white {
   border: 4px solid #ffffff;
+}
+.side-menu, #my-observations {
+  a {
+    color: #ffffff;
+  }
+  a.active, a:hover {
+    color: $nao-dark-green;
+  }
+  li {
+    border-bottom: 1px #ffffff solid;
+  }
+}
+.dropdown-menu a.active {
+  background-color: $nao-dark-green;
 }
 /* NAVIGATION SECTION */
 nav {
@@ -100,7 +119,7 @@ nav {
     width: 70px;
   }
 }
-.btn {
+.btn-landing {
   border-radius: 30px !important;
 }
 /* LANDING PAGE -> IMAGE SECTION */
@@ -284,7 +303,46 @@ nav {
       text-decoration: none;
     }
   }
+}
 
+/* PARTICIPER SECTION */
+#participer-section {
+  .fa {
+    font-size: 2.5em;
+  }
+  a.img-link {
+    color: $nao-dark-green;
+  }
+  a:hover.img-link {
+    color: $nao-blue;
+    text-decoration: none;
+  }
+}
+/* RECHERCHER SECTION */
+#rechercher-result-section {
+  td a {
+    color: #ffffff;
+  }
+  td a:hover {
+    color: $nao-blue;
+  }
+}
+/* LISTE OBSERVATION */
+#liste-observation-section {
+  a {
+    color: #000000;
+  }
+  a:hover {
+    color: $nao-blue;
+    text-decoration: none;
+  }
+}
+
+/* ADMIN SECTIONS */
+#profil_form .row:not(:last-child),
+#my-observations .row-separate:not(:last-child) {
+  padding-bottom: 12px;
+  border-bottom: 1px #ffffff solid;
 }
 /* BREAKPOINT SECTION */
 @media (min-width:768px) {

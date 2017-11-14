@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Milan Royal à Piana - NAO</title>
+  <title>Participer - NAO</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-md navbar-light mt-3 mb-0 pb-0">
     <div class="container">
       <a class="nav-link d-md-none p-0" href="index.html"><img src="img/mini-logo.png" class="img-nav" alt=""></a>
-      <div class="nav-item dropdown order-md-2">
+      <div class="nav-item dropdown  order-md-2">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
           <img src="img/user.png" class="img-nav" alt="">
         </a>
@@ -36,7 +36,7 @@
           <li class="nav-item text-center">
             <a class="nav-link" href="apropos.html">A propos</a>
           </li>
-          <li class="nav-item text-center">
+          <li class="nav-item text-center active">
             <a class="nav-link" href="participer.html">Participer</a>
           </li>
           <li class="nav-item d-none d-md-inline text-center">
@@ -48,7 +48,7 @@
           <li class="nav-item text-center">
             <a class="nav-link" href="blog.html">Blog</a>
           </li>
-          <li class="nav-item text-center active">
+          <li class="nav-item text-center">
             <a class="nav-link" href="liste-observation.html">Observation</a>
           </li>
         </ul>
@@ -56,77 +56,70 @@
     </div>
   </nav>
 
-  <!-- SECTION ARTICLE BLOG -->
-  <article id="blog" class="mb-5">
-    <div class="container p-5">
+  <!-- FORM SECTION -->
+  <div id="participer-section" class="py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-12 text-right">
-          <a class="btn btn-success" href="participer.html" title="Ajouter une observation">
-            <i class="fa fa-plus"></i> Observation
-          </a>
+        <div class="col-12 text-center pb-3">
+          <h1>Saisir une observation</h1>
         </div>
       </div>
-    </div>
-    <div class="container bg-cream">
-      <div class="row py-5">
-        <div class="col-12 text-center">
-          <h1>Milan royal à Piana</h1>
+      <form id="participer_form">
+        <div class="row">
+          <div class="form-group col-12 col-md-6">
+            <label for="name">Nom de l'oiseau *</label>
+            <input type="text" id="birdname" class="form-control">
+          </div>
+          <div class="form-group col-12 col-md-6">
+            <label for="species">Choisissez une famille</label>
+            <select class="form-control" id="species">
+              <option value="1">Accipitridae</option>
+              <option value="8">Anhimidae</option>
+              <option value="20">Capitonidae</option>
+              <option value="104">Regulidae</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col px-4 pb-4">
-          <div id="carouselObser" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselObser" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselObser" data-slide-to="1"></li>
-              <li data-target="#carouselObser" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/pobs-01.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="img/pobs-02.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="img/pobs-03.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselObser" role="button" data-slide="prev">
-              <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
-              <span class="sr-only">Précédent</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselObser" role="button" data-slide="next">
-              <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
-              <span class="sr-only">Suivant</span>
+        <div class="row">
+          <div class="form-group col-12 col-md-6">
+            <label for="title">Donner un titre à mon observation *</label>
+            <input type="text" id="title" class="form-control">
+          </div>
+          <div class="form-group col-12 col-md-6">
+            <label for="place">Lieu *</label>
+            <input type="text" id="place" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12 col-md-6">
+            <label for="date">Date de l'observation *</label>
+            <input type="date" id="date" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12">
+            <label for="description">Description</label>
+            <textarea id="description" rows="8" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" title="Ajoutez des images" class="img-link">
+              <i class="fa fa-picture-o"></i>
             </a>
           </div>
         </div>
-      </div>
-      <div class="row pt-4 px-4">
-        <div class="col-12 col-md-4">Auteur : Jean</div>
-        <div class="col-12 col-md-4">Espèce : Milan</div>
-      </div>
-      <div class="row px-4">
-        <div class="col-12 col-md-4">Date : 4 juin 2017</div>
-        <div class="col-12 col-md-4">Lieu : Piana</div>
-        <div class="col-12 col-md-4">Point: 42.260662, 8.676282</div>
-        <div class="col-12 py-5">
-          <p>Superbe oiseau oiseau observé cette année, en juin près de Porto, en Corse.</p>
+        <div class="row justify-content-around">
+          <div class="col-12 col-md-4 py-2">
+            <a href="#" class="btn btn-success btn-block">Sauvegarder</a>
+          </div>
+          <div class="col-12 col-md-4 py-2">
+            <a href="#" class="btn btn-success btn-block">Envoyer</a>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
-  </article>
-
-  <section class="back-up d-none d-md-block">
-    <div class="container">
-      <div class="row justify-content-end">
-        <a href="#" title="Remonter vers le haut de la page">
-          <img src="img/bird-up.png" alt="" class="bird-up">
-        </a>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <footer id="footer-section">
     <div class="container text-center py-3">
